@@ -12,10 +12,8 @@ public class Amazon {
 		f.invokebrowser();
 		f.changecurrency();
 		f.search();
-		f.scrollDown();
 		f.sorting();
-		f.filter();
-		Thread.sleep(500);
+		Thread.sleep(5000);
 		f.addToCart();
 	}
 

@@ -54,8 +54,7 @@ public class Firstclass {
 	}
 
 	public void addToCart() throws InterruptedException {
-		driver.findElement(
-				By.xpath("//*[@id=\"search\"]/div/div[2]/div/span[3]/div[2]/div[3]/div/span/div/div/span/a/div/img")).click();
+		driver.findElement(By.xpath("//a[@class='a-link-normal a-text-normal']//span[text()='XSWPL Gorgeous Heavy Beaded Organza Quinceanera Dresses for Sweet 16 Ball Gowns']")).click();
 		// selecting size
 		Thread.sleep(500);
 		Select s = new Select(driver.findElement(By.name("dropdown_selected_size_name")));
@@ -63,7 +62,7 @@ public class Firstclass {
 		// selecting color
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//div[@id=\"variation_color_name\"]/ul/li[3]")).click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
 
 	}
