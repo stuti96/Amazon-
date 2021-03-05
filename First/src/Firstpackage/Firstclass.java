@@ -38,20 +38,11 @@ public class Firstclass {
 		s.selectByIndex(3);
 	}
 
-	public void scrollDown() throws InterruptedException {
-		// scroll down
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0, 170)");
-		// scroll up
-		Thread.sleep(1000);
-		js.executeScript("window.scrollBy(0, -150)");
-	}
-
-	public void filter() {
-		// checkbox
-		driver.findElement(By.xpath("//li[@id='p_n_feature_three_browse-bin/12457477011']/following-sibling::li[2]")).click();
-
-	}
+	/*
+	 * public void scrollDown() throws InterruptedException { // scroll down
+	 * JavascriptExecutor js = (JavascriptExecutor) driver;
+	 * js.executeScript("window.scrollBy(0, 170)"); }
+	 */
 
 	public void addToCart() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@class='a-link-normal a-text-normal']//span[text()='XSWPL Gorgeous Heavy Beaded Organza Quinceanera Dresses for Sweet 16 Ball Gowns']")).click();

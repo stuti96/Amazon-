@@ -12,6 +12,7 @@ public class Amazon {
 		f.invokebrowser();
 		f.changecurrency();
 		f.search();
+		f.sorting();
 		Thread.sleep(5000);
 		f.addToCart();
 	}
